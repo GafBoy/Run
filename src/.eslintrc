@@ -7,7 +7,7 @@
     "parser": "babel-eslint",
     "parserOptions": {
       "ecmaVersion": 2016,
-      "sourceType": "module",
+      "sThere are no changes to commit.ourceType": "module",
       "ecmaFeatures": {
         "jsx": true
       }
