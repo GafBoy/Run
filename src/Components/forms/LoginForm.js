@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { Form, Button, FormField, Label } from "semantic-ui-react";
+import { Form, Button, FormField, Label, Input } from "semantic-ui-react";
 import Validator from "validator";
 import InLineError from "../messages/InLineError";
 
@@ -33,13 +33,13 @@ class LoginForm extends React.Component {
             <Form onSubmit={this.onSubmit}>
                 <FormField error={!!errors.email}>
                     <Label html="email">Email</Label>
-                    <input type="emil" id="email" name="email" placeholder="exapmple@example.com" value={data.email}
+                    <Input type="emil" id="email" name="email" placeholder="exapmple@example.com" value={data.email}
                         onChange={this.onChange} />
                     {errors.email && <InLineError text={errors.email} />}
                 </FormField>
                 <FormField error={!!errors.password}>
                     <Label html="password">Password</Label>
-                    <input type="password" id="password" name="password" placeholder="Make it secure" value={data.password}
+                    <Input type="password" id="password" name="password" placeholder="Make it secure" value={data.password}
                         onChange={this.onChange} />
                     {errors.password && <InLineError text={errors.password} />}
                 </FormField>
